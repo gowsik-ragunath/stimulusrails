@@ -1,0 +1,44 @@
+// Place all the styles related to the examples controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 1px 1px #555555;
+}
+
+.show-content {
+  font-size: 1.5rem;
+  overflow-wrap: break-word;
+}
+
+.individual-container {
+  background-color: #F7F7F7;
+  padding-left: 15px;
+}
+
+.submit {
+    width: max-content;
+    height: 30px;
+    margin: 10px 0px;
+    color: snow;
+    background-color: #555555;
+    font-size: 1rem;
+}
+
+.traverse-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.traverse-link a {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
