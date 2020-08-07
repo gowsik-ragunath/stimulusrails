@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container" data-controller="example">
+<div class="container" data-controller="example--show-hide">
   <div class="traverse-link">
     <%= link_to 'Edit',
                 'javascript:void(0)',
                 data: {
-                    target: "example.toggleLink",
-                    action: "click->example#toggleContent"
+                    target: "example--show-hide.toggleLink",
+                    action: "click->example--show-hide#toggleContent"
                 } %>
     <%= link_to 'Back', examples_path %>
   </div>
   
   <!-- show content -->
-  <div class="show-content" data-target="example.showContent">
+  <div class="show-content" data-target="example--show-hide.showContent">
     <h1>Example Content</h1>
     <%= @example.rich_text %>
   </div>
   
   <!-- edit content -->
-  <div class="edit-content" data-target="example.editContent">
+  <div class="edit-content" data-target="example--show-hide.editContent">
     <h1>Editing Example</h1>
 
     <%= render 'form', example: @example %>
